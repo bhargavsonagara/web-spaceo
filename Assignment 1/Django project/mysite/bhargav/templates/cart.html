@@ -1,0 +1,287 @@
+{% include 'header.html' %}
+
+    <div class="container total">
+        <div class="row" style="background-color: rgb(255,97,55);">
+            <div class="col-6 col-sm-6">
+                <p class="text-white title">Product</p>
+            </div>
+            <div class="col-6 col-sm-6 text-right">
+                <div class="row">
+                    <div class="col-6 col-sm-6 text-left">
+                        <p class="text-white title">Quantity</p>
+                    </div>
+                    <div class="col-6 col-sm-6">
+                        <p class="text-white title">Subtotal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6 col-sm-6">
+                <div class="row" id="remove">
+                    <div class="col-12 col-sm-4">
+                        <img src="/static/images/gallery-1.jpg" class="img-fluid d-block w-75 img_2">
+                    </div>
+                    <div class="col-12 col-sm-8 mt-2">
+                        <p class="text-muted ca_1">Red Printed T-Shirt</p>
+                        <p class="text-muted">Price: $50.00</p>
+                        <small><input type="button" style="color: #ff523b;" class="text-decoration-none button" onclick="textDeco()" value="Remove"></small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 text-right">
+                <div class="row inp_1" id="removes">
+                    <div class="col-6 col-sm-6 text-left">
+                        <input type="number" id="inp1" class="inp mb-4 mt-3"><input type="button" class="inp ml-2 bg-white" value="++" onclick="inc1()">
+                    </div>
+                    <div class="col-6 col-sm-6 my-auto">
+                        <p class="text-muted ca_2">$<input type="button" class="text-decoration-none button text-muted pl-0" id="sub1"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6 col-sm-6">
+                <div class="row" id="remove1">
+                    <div class="col-12 col-sm-4">
+                        <img src="/static/images/product-2.jpg" class="img-fluid d-block w-75 img_2">
+                    </div>
+                    <div class="col-12 col-sm-8 mt-3">
+                        <p class="text-muted ca_1">HRX Sports Shoes</p>
+                        <p class="text-muted">Price: $75.00</p>
+                        <small><input type="button" style="color: #ff523b;" class="text-decoration-none button" onclick="textDeco1()" value="Remove"></small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 text-right">
+                <div class="row inp_2" id="removes1">
+                    <div class="col-6 col-sm-6 text-left">
+                        <input type="number" value="1" id="inp2" class="inp mb-4 mt-3"><input type="button" class="inp ml-2 bg-white" value="++" onclick="inc2()">
+                    </div>
+                    <div class="col-6 col-sm-6 my-auto">
+                        <p class="text-muted ca_2">$<input type="button" class="text-decoration-none button text-muted pl-0" id="sub2" value="75"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6 col-sm-6">
+                <div class="row" id="remove2">
+                    <div class="col-12 col-sm-4">
+                        <img src="/static/images/product-3.jpg" class="img-fluid d-block w-75 img_2">
+                    </div>
+                    <div class="col-12 col-sm-8 mt-2">
+                        <p class="text-muted ca_1">HRX Gray Trackpants</p>
+                        <p class="text-muted">Price: $45.00</p>
+                        <small><input type="button" style="color: #ff523b;" class="text-decoration-none button" onclick="textDeco2()" value="Remove"></small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 text-right">
+                <div class="row inp_3" id="removes2">
+                    <div class="col-6 col-sm-6 text-left">
+                        <input type="number" value="1" id="inp3" class="inp mb-4 mt-3"><input type="button" class="inp ml-2 bg-white" value="++" onclick="inc3()">
+                    </div>
+                    <div class="col-6 col-sm-6 my-auto">
+                        <p class="text-muted ca_2">$<input type="button" class="text-decoration-none button text-muted pl-0" id="sub3" value="45"></p>
+                    </div>
+                </div>
+                <hr class="mt-5 w-100">
+                <div class="row">
+                    <div class="col-6 col-sm-6 text-left">
+                        <p class="text-dark ca_2">Subtotal</p>
+                    </div>
+                    <div class="col-6 col-sm-6">
+                        <p class="text-muted ca_2">$<input type="button" class="text-decoration-none button text-muted pl-0" id="subTotal"></p>
+                    </div>
+                    <div class="col-6 col-sm-6 text-left">
+                        <p class="text-dark ca_2">Tax</p>
+                    </div>
+                    <div class="col-6 col-sm-6">
+                        <p class="text-muted ca_2">$<input type="button" class="text-decoration-none button text-muted pl-0" value="35"></p>
+                    </div>
+                    <div class="col-6 col-sm-6 text-left">
+                        <p class="text-dark ca_2">Total</p>
+                    </div>
+                    <div class="col-6 col-sm-6">
+                        <p class="text-muted ca_2">$<input type="button" class="text-decoration-none button text-muted pl-0" id="total"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Modal-->
+    <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="card">
+                <div class="card-body text-center modals">
+                    <i class="fas fa-quote-left fa-2x mb-3"></i>
+                    <p class="text-muted">I am currently pursuing my Bachelor of Technology in Computer Science and looking for carrer in the field of Computer Science and Technology. I mostly work as a front end web developer well known on HTML5, CSS3, Bootstrap and JavaScript languages.</p>
+                    <i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="far fa-star mb-4"></i>
+                    <img src="/static/images/bhargav.jpg" class="img-fluid d-block mx-auto w-25 mb-1">
+                    <p class="font-weight-bold text-dark">Bhargav Sonagara</p>
+                </div>
+            </div>
+		</div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="google_play" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Sorry...</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            Our Team Working On It.
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer style="background-color: rgb(1,0,1);">
+        <div class="container pt-5" style="padding-bottom: 16px;">
+            <div class="row c_6">
+                <div class="col-12 col-sm-3 text-white">
+                    <h4 class="mb-4">Download Our App</h4>
+                    <p class="text-muted mb-4">Download App for Android and ios mobile phone.</p>
+                    <div class="row c_9">
+                        <div class="col-6 col-sm-6">
+                            <a href="#google_play" data-toggle="modal" class="text-decoration-none"><img src="/static/images/play-store.png" class="img-fluid d-block"></a>
+                        </div>
+                        <div class="col-6 col-sm-6">
+                            <a href="#google_play" data-toggle="modal" class="text-decoration-none"><img src="/static/images/app-store.png" class="img-fluid d-block img_5"></a>
+                        </div>
+                    </div>      
+                </div>
+                <div class="col-12 col-sm-3 text-white text-center c_10">
+                    <h1 class="footer-brand mb-4"><a href="/next/index/" class="text-decoration-none text-white" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><i class="fab fa-bootstrap mr-2"></i><span class="b_2">BHAR</span><span class="b_2">GAV'S</span></a></h1>
+                    <p class="text-muted mb-4">our Purpose is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="col-12 col-sm-3 text-white text-center">
+                    <h4 class="mb-4">Useful Links</h4>
+                    <p class="c_11">
+                        <a href="#google_play" data-toggle="modal" class="text-decoration-none text-muted">Coupons</a><br>
+                        <a href="#google_play" data-toggle="modal" class="text-decoration-none text-muted">Blog Post</a><br>
+                        <a href="#google_play" data-toggle="modal" class="text-decoration-none text-muted">Return Policy</a><br>
+                        <a href="#google_play" data-toggle="modal" class="text-decoration-none text-muted">Join Affiliate</a>
+                    </p>
+                </div>
+                <div class="col-12 col-sm-3 text-white text-center">
+                    <h4 class="mb-4">Follow Us</h4>
+                    <p class="c_11">
+                        <a href="https://www.facebook.com/bhargav.sonagra" class="text-decoration-none text-muted">Facebook</a><br>
+                        <a href="https://twitter.com/BhargavSonagar2" class="text-decoration-none text-muted">Twitter</a><br>
+                        <a href="https://www.instagram.com/sonagara_bhargav/" class="text-decoration-none text-muted">Instagram</a><br>
+                        <a href="https://www.youtube.com/channel/UC-rA33_DgEXdazJMwTIPaSw" class="text-decoration-none text-muted">Youtube</a><br>
+                        <a href="https://www.linkedin.com/in/bhargavsonagara/" class="text-decoration-none text-muted">Linkedin</a>
+                    </p>
+                </div>
+            </div>
+            <hr class="hr_2">
+            <p class="text-center text-muted p_1 pb-1" style="margin-bottom: -8px">Copyright &copy; 2020 - Designed and Developed by <a href="index.html" class="text-decoration-none text-muted">BHARGAV'S</a></p>
+        </div>
+    </footer>
+    <script>
+        function textDeco() {
+            const remove = document.getElementById("remove");
+            const parent = remove.parentNode;
+            parent.removeChild(remove);
+
+            const removes = document.getElementById("removes");
+            const parents = removes.parentNode;
+            parents.removeChild(removes); 
+        }
+
+        function textDeco1() {
+            const remove1 = document.getElementById("remove1");
+            const parent1 = remove1.parentNode;
+            parent1.removeChild(remove1);
+
+            const removes1 = document.getElementById("removes1");
+            const parents1 = removes1.parentNode;
+            parents1.removeChild(removes1); 
+        }
+
+        function textDeco2() {
+            const remove2 = document.getElementById("remove2");
+            const parent2 = remove2.parentNode;
+            parent2.removeChild(remove2);
+
+            const removes2 = document.getElementById("removes2");
+            const parents2 = removes2.parentNode;
+            parents2.removeChild(removes2); 
+        }
+        
+        
+        document.getElementById('inp1').defaultValue = 1;
+        document.getElementById('sub1').defaultValue = 50;
+
+        var inc1 = () => {
+            var inp1 = document.getElementById("inp1").value++;
+            var sub1 = 50 * inp1 + 50;
+            document.getElementById('sub1').value = sub1;
+            document.getElementById('subTotal').value = parseFloat(sub1) + parseFloat(sub2) + parseFloat(sub3);
+            document.getElementById('total').value = parseFloat(sub1) + parseFloat(sub2) + parseFloat(sub3) + parseInt(35);
+        }
+
+
+
+       /* var sub1 = document.getElementById('sub1').value;
+        var sub2 = document.getElementById('sub2').value;
+        var sub3 = document.getElementById('sub3').value;
+        var inc1 = () => {
+            var inp1 = document.getElementById("inp1").value++;
+            var sub1 = 50 * document.getElementById('inp1').value;
+            document.getElementById('sub1').value = sub1;
+            document.getElementById('subTotal').value = parseFloat(sub1) + parseFloat(sub2) + parseFloat(sub3);
+            document.getElementById('total').value = parseFloat(sub1) + parseFloat(sub2) + parseFloat(sub3) + parseInt(35);
+        }
+        
+        document.getElementById('inp2').defaultValue = 1;
+        document.getElementById('sub2').defaultValue = 75;
+        var inc2 = () => {
+            var inp2 = document.getElementById("inp2").value++;
+            var sub2 = 75 * document.getElementById('inp2').value;
+            document.getElementById('sub2').value = sub2;
+            document.getElementById('subTotal').value = parseFloat(sub1) + parseFloat(sub2) + parseFloat(sub3); 
+            document.getElementById('total').value = parseFloat(sub1) + parseFloat(sub2) + parseFloat(sub3) + parseInt(35);
+        }
+        
+        
+        document.getElementById('inp3').defaultValue = 1;
+        document.getElementById('sub3').defaultValue = 45;
+        var inc3 = () => {
+            var inp3 = document.getElementById("inp3").value++;
+            var sub3 = 45 * document.getElementById('inp3').value;
+            document.getElementById('sub3').value = sub3;
+            document.getElementById('subTotal').value = parseFloat(sub1) + parseFloat(sub2) + parseFloat(sub3); 
+            document.getElementById('total').value = parseFloat(sub1) + parseFloat(sub2) + parseFloat(sub3) + parseInt(35);
+        }
+
+
+        document.getElementById('subTotal').value = parseFloat(sub1) + parseFloat(sub2) + parseFloat(sub3); 
+        document.getElementById('total').value = parseFloat(sub1) + parseFloat(sub2) + parseFloat(sub3) + parseInt(35); 
+        */
+
+    </script>
+
+    <!--jquery Script Link-->
+    <script src="/static/js/jquery-3.5.1.js"></script>
+    
+    <!--Popper Script Link-->
+    <script src="/static/js/popper.js"></script>
+    
+    <!--Bootstrap JS Script Link-->
+    <script src="/static/js/bootstrap.min.js"></script>
+</body>
+</html> 

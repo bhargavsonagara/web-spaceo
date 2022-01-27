@@ -1,0 +1,45 @@
+.c_13{
+    margin-bottom: -20px;
+    margin-top: 70px;
+}
+.c_14{
+    margin-bottom: -65px;
+}
+
+.pg_btn{
+    position: relative;
+    bottom: 50px;
+}
+.pg_btn>span{
+    border: 1px solid #ff523b;
+    padding: 8px;
+    cursor: pointer;
+}
+.pg_btn :hover{
+    background-color:#ff523b;
+}
+
+
+@media (max-width: 576px){
+    .c_15{
+        margin-bottom: 20px;
+    }
+
+    .c_13{
+        margin-left: 20px;  
+        margin-right: 20px;  
+    }
+    .dropdown>button{
+        font-size: 14px;
+    }
+    
+}
+@media (max-width: 397px){
+    .c_13>div>h4{
+        font-size: 18px;
+    }
+    
+    .dropdown{
+        font-size: 10px;
+    }
+}

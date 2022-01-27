@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product1 - E-commerce WEB</title>
+    <!--Bootstrap Style Link-->
+    <link rel="stylesheet" href="/static/CSS/bootstrap.min.css">
+
+    <!--Custom Style Link-->
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/productStyle.css">
+    <link rel="stylesheet" href="/static/product1.css">
+
+    <!--Font Awesome Style Link-->
+    <link rel="stylesheet" href="/static/CSS/all.css">
+
+    <!--Google Font Link-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!--Top bar-->
+    <div class="navbar navbar-light navbar-expand-md">
+        <h1 class="navbar-brand"><a href="/next/index/" class="text-decoration-none" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><i class="fab fa-bootstrap text-danger mr-2"></i><span style="color: rgb(231,150,130);" class="b_1">BHAR</span><span style="color: rgb(90,75,73);" class="b_1">GAV'S</span></a></h1>
+        <button type="button" class="navbar-toggler" data-target="#my_bar" data-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="my_bar">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item"><a href="/next/index/" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/next/products/" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="#exampleModalCenter1" class="nav-link" data-toggle="modal">About</a></li>
+                <li class="nav-item"><a href="/next/contact/" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="/next/account/" class="nav-link">Account</a></li>
+                <li class="nav-item"><a href="/next/follower/" class="nav-link">Followers</a></li>
+                <a href="/next/cart/"><img src="/static/images/cart.png" class="img-fluid img_1 d-md-block d-none mt-1"></a>
+            </ul>
+        </div>
+        <a href="/next/cart/"><img src="/static/images/cart.png" class="img-fluid img_1 mt-1 d-md-none c_12"></a>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <img src="/static/images/gallery-1.jpg" class="img-fluid d-block hov img_2 w-100" id="ProductImage">-
+                <div class="row img_3">
+                    <div class="col-3">
+                        <img src="/static/images/gallery-1.jpg" class="img-fluid d-block mt-3 mb-2 hov SmallImage w-100">
+                    </div>
+                    <div class="col-3">
+                        <img src="/static/images/gallery-2.jpg" class="img-fluid d-block mt-3 mb-2 hov SmallImage w-100">
+                    </div>
+                    <div class="col-3">
+                        <img src="/static/images/gallery-3.jpg" class="img-fluid d-block mt-3 mb-2 hov SmallImage w-100">
+                    </div>
+                    <div class="col-3">
+                        <img src="/static/images/gallery-4.jpg" class="img-fluid d-block mt-3 mb-2 hov SmallImage w-100">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 c_17">
+                <p class="text-muted mt-3">Home/T-Shirt</p>
+                <h1 class="font-weight-bold mb-3 productTitle">Red Printed T-Shirt by HRX</h1>
+                <h4 class="text-muted font-weight-bold mb-3 productPrice">$50.00</h4>
+                <select class="dropdown btn btn-light mb-3" aria-haspopup="true" aria-labelledby="false">
+                    <option value="" class="dropdown-item">Select Size</option>
+                    <option value="" class="dropdown-item">XXL</option>
+                    <option value="" class="dropdown-item">XL</option>
+                    <option value="" class="dropdown-item">Large</option>
+                    <option value="" class="dropdown-item">Medium</option>
+                    <option value="" class="dropdown-item">Small</option>
+                </select> <br>  
+                <input type="number" value="1" class="inp mb-4">
+                <a class="text-decoration-none"><button type="button" class="btn mb-2 cart text-white pl-4 pr-4 ml-2" onclick="updateCartContainer()">Add To Cart</button></a>
+                <h4 class="font-weight-bold mb-3">Product Details</h4>
+                <p class="text-muted textp">Give your Summer wardrobe a style upgrade with the HRX Men's active T-Shirt. Team it with a pair of shorts of your 
+                    morning workout or a denims for a evening out with the guys. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim consectetur exercitationem cumque aperiam veniam voluptas, natus sequi beatae minus aspernatur. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-5 c_16">
+            <h4 class="font-weight-bold">Related Products</h4>
+            <p class="ml-auto"><a href="/next/products" class="text-muted text-decoration-none">View More</a></p>
+        </div>
+        <div class="row c_3">
+            <div class="col-12 col-sm-3">
+                <a href="" class="text-decoration-none">
+                    <div class="card border-0 mb-4">
+                        <div class="card-img">
+                            <img src="/static/images/product-9.jpg" class="img-fluid d-block">
+                        </div>
+                        <p class="card-title text-muted mt-1">Black Sportx Watch</p>
+                        <span class="star"><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="far fa-star"></i></span>   
+                        <p class="card-text text-muted mt-1">$135.00</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-3">
+                <a href="" class="text-decoration-none">
+                    <div class="card border-0 mb-4">
+                        <div class="card-img">
+                            <img src="/static/images/product-10.jpg" class="img-fluid d-block">
+                        </div>
+                        <p class="card-title text-muted mt-1">Black HRX Shoes</p>
+                        <span class="star"><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star-half-alt"></i></span>   
+                        <p class="card-text text-muted mt-1">$50.00</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-3">
+                <a href="" class="text-decoration-none">
+                    <div class="card border-0 mb-4">
+                        <div class="card-img">
+                            <img src="/static/images/product-11.jpg" class="img-fluid d-block">
+                        </div>
+                        <p class="card-title text-muted mt-1">Gray Nike Shoes</p>
+                        <span class="star"><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star-half-alt"></i></span>   
+                        <p class="card-text text-muted mt-1">$55.00</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-3 mb-5">
+                <a href="" class="text-decoration-none">
+                    <div class="card border-0">
+                        <div class="card-img">
+                            <img src="/static/images/product-12.jpg" class="img-fluid d-block">
+                        </div>
+                        <p class="card-title text-muted mt-1">HRX Black Trackpants</p>
+                        <span class="star"><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="far fa-star"></i></span>   
+                        <p class="card-text text-muted mt-1">$75.00</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal-->
+    <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="card">
+                <div class="card-body text-center modals">
+                    <i class="fas fa-quote-left fa-2x mb-3"></i>
+                    <p class="text-muted">I am currently pursuing my Bachelor of Technology in Computer Science and looking for carrer in the field of Computer Science and Technology. I mostly work as a front end web developer well known on HTML5, CSS3, Bootstrap and JavaScript languages.</p>
+                    <i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="far fa-star mb-4"></i>
+                    <img src="/static/images/bhargav.jpg" class="img-fluid d-block mx-auto w-25 mb-1">
+                    <p class="font-weight-bold text-dark">Bhargav Sonagara</p>
+                </div>
+            </div>
+		</div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="google_play" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Sorry...</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            Our Team Working On It.
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer style="background-color: rgb(1,0,1);">
+        <div class="container pt-5" style="padding-bottom: 16px;">
+            <div class="row c_6">
+                <div class="col-12 col-sm-3 text-white">
+                    <h4 class="mb-4">Download Our App</h4>
+                    <p class="text-muted mb-4">Download App for Android and ios mobile phone.</p>
+                    <div class="row c_9">
+                        <div class="col-6 col-sm-6">
+                            <a href="#google_play" data-toggle="modal" class="text-decoration-none"><img src="/static/images/play-store.png" class="img-fluid d-block"></a>
+                        </div>
+                        <div class="col-6 col-sm-6">
+                            <a href="#google_play" data-toggle="modal" class="text-decoration-none"><img src="/static/images/app-store.png" class="img-fluid d-block img_5"></a>
+                        </div>
+                    </div>      
+                </div>
+                <div class="col-12 col-sm-3 text-white text-center c_10">
+                    <h1 class="footer-brand mb-4"><a href="/next/index/" class="text-decoration-none text-white" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><i class="fab fa-bootstrap mr-2"></i><span class="b_2">BHAR</span><span class="b_2">GAV'S</span></a></h1>
+                    <p class="text-muted mb-4">our Purpose is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="col-12 col-sm-3 text-white text-center">
+                    <h4 class="mb-4">Useful Links</h4>
+                    <p class="c_11">
+                        <a href="#google_play" data-toggle="modal" class="text-decoration-none text-muted">Coupons</a><br>
+                        <a href="#google_play" data-toggle="modal" class="text-decoration-none text-muted">Blog Post</a><br>
+                        <a href="#google_play" data-toggle="modal" class="text-decoration-none text-muted">Return Policy</a><br>
+                        <a href="#google_play" data-toggle="modal" class="text-decoration-none text-muted">Join Affiliate</a>
+                    </p>
+                </div>
+                <div class="col-12 col-sm-3 text-white text-center">
+                    <h4 class="mb-4">Follow Us</h4>
+                    <p class="c_11">
+                        <a href="https://www.facebook.com/bhargav.sonagra" class="text-decoration-none text-muted">Facebook</a><br>
+                        <a href="https://twitter.com/BhargavSonagar2" class="text-decoration-none text-muted">Twitter</a><br>
+                        <a href="https://www.instagram.com/sonagara_bhargav/" class="text-decoration-none text-muted">Instagram</a><br>
+                        <a href="https://www.youtube.com/channel/UC-rA33_DgEXdazJMwTIPaSw" class="text-decoration-none text-muted">Youtube</a><br>
+                        <a href="https://www.linkedin.com/in/bhargavsonagara/" class="text-decoration-none text-muted">Linkedin</a>
+                    </p>
+                </div>
+            </div>
+            <hr class="hr_2">
+            <p class="text-center text-muted p_1 pb-1" style="margin-bottom: -8px">Copyright &copy; 2020 - Designed and Developed by <a href="index.html" class="text-decoration-none text-muted">BHARGAV'S</a></p>
+        </div>
+    </footer>
+    <script>
+        var ProductImage = document.getElementById("ProductImage");
+        var SmallImage = document.getElementsByClassName("SmallImage");
+        SmallImage[0].onclick = function(){
+            ProductImage.src = SmallImage[0].src;
+        }
+        SmallImage[1].onclick = function(){
+            ProductImage.src = SmallImage[1].src;
+        }
+        SmallImage[2].onclick = function(){
+            ProductImage.src = SmallImage[2].src;
+        }
+        SmallImage[3].onclick = function(){
+            ProductImage.src = SmallImage[3].src;
+        }
+    </script>
+
+    <!--jquery Script Link-->
+    <script src="/static/js/jquery-3.5.1.js"></script>
+    
+    <!--Popper Script Link-->
+    <script src="/static/js/popper.js"></script>
+    
+    <!--Bootstrap JS Script Link-->
+    <script src="/static/js/bootstrap.min.js"></script>
+
+    <!--Custum Script-->
+    <script type="text/javascript" src="/static/js/productScript.js"></script>
+</body>
+</html>

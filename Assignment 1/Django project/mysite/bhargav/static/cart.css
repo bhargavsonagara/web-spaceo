@@ -1,0 +1,66 @@
+.ca_1{
+    font-size: medium;
+}
+.ca_2{
+    font-size: large;
+}
+.inp{
+    font-size: 15px;
+    max-height: 36px;
+    max-width: 36px;
+}
+.total{
+    margin-top: 60px;
+    margin-bottom: 100px;
+    max-width: 900px;
+}
+.title{
+    position: relative;
+    top: 8px;
+}
+hr{
+    border: 2px solid #ff523b;
+}
+
+.button{
+    background: none;
+    outline: none;
+    border: none;
+}
+
+@media (max-width: 576px){
+    .title{
+        padding-bottom: 13px;
+    }
+    .img_2{
+        max-width: 100px;
+        margin: auto;
+    }
+    .ca_1{
+        display: none;
+    }
+    .col-sm-8{
+        text-align: center;
+    }
+    .ca_2{
+        font-size: 16px;
+    }
+    .inp{
+        position: relative;
+        left: 35px;
+    }
+    .inp_1{
+        position: relative;
+        bottom: 20px;
+    }
+    .inp_2{
+        position: relative;
+        bottom: 30px;
+    }
+    .inp_3{
+        position: relative;
+        top: 30px;
+        left: 2px;
+    }
+
+}

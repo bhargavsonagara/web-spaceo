@@ -1,0 +1,92 @@
+/*Top Bar*/
+.logo{
+    background-color: rgb(255,227,225);
+}
+.logo>h1{
+    padding-left: 20px; 
+    font-size: 30px;
+}
+.logo>h1>a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.logo1{
+    color: rgb(231,150,130);
+}
+.logo2{
+    color: rgb(90,75,73);
+}
+
+/*About Us*/
+.about>h1{
+    font-weight: 400; border-bottom: 3px solid rgba(0, 0, 0, 0.226);
+}
+
+/*Products*/
+.product>h1{
+    font-weight: 400; border-bottom: 3px solid rgba(0, 0, 0, 0.226);
+}
+
+/*Start Team*/
+.team>h1{
+    font-weight: 400; border-bottom: 3px solid rgba(0, 0, 0, 0.226);
+}
+
+/*Contact Us*/
+.contact>div>div>h4{
+    color: rgb(252, 119, 84); font-weight: 700;
+}
+.contact>div>div>h5{
+    font-weight: 700;
+}
+.contact-right{
+    line-height: 40px;
+}
+.contact-right>h5{
+    font-weight: 700;
+}
+.contact-right>p{
+    font-weight: 700;
+}
+.contact-right-icon{
+    min-width: 50px; padding-right: 15px;
+}
+.product:hover{
+    position: relative;
+    top: 10px;
+}
+.fa-facebook-square{
+    color: #777;
+}
+.fa-linkedin{
+    color: #777;
+}
+.fa-twitter-square{
+    color: #777;
+}
+.fa-youtube-square{
+    color: #777;
+}
+.fa-facebook-square:hover{
+  color: rgb(60, 90, 152);
+}
+.fa-linkedin:hover{
+  color: #0077B5;
+}
+.fa-twitter-square:hover{
+  color: #55ACEE;
+}
+.fa-youtube-square:hover{
+  color: #FF0A00;
+}
+
+/*Contact Page*/
+.card-title{
+    font-weight: 400;
+    font-size: 30px;
+}
+.card-body>p{
+    max-width: 85%;
+}
+.sub{
+    max-width: 100px;
+}

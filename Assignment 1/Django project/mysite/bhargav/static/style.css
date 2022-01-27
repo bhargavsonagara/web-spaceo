@@ -1,0 +1,461 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Top Bar */
+.navbar > h1 {
+  font-size: 30px;
+  margin-left: 100px;
+}
+.b_1 {
+  font-size: 30px;
+}
+
+.nav-link {
+  font-size: 15px;
+  margin-left: 8px;
+  font-weight: 700;
+}
+.img_1 {
+  max-width: 26px;
+  max-height: 26px;
+  margin-right: 100px;
+  margin-left: 8px;
+}
+
+/* Front Two Column */
+.c_1 > div > h1 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+.c_1 > div > .btn-warning {
+  background-color: rgb(218, 83, 49);
+  color: #fff;
+  font-weight: 400;
+}
+.c_1 > div > button {
+  border-radius: 50px;
+}
+.c_1 > div > button:hover {
+  background-color: rgb(102, 48, 45);
+}
+.c_1 > div > img {
+  margin-top: 100px;
+  padding-bottom: 13px;
+}
+
+/* Three Column image */
+.c_2 {
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+/* Featured Products */
+.hr_1 {
+  border: 2px solid rgb(238, 111, 81);
+  width: 70px;
+  margin-top: -1px;
+}
+.c_3 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.star {
+  margin-top: -11px;
+  color: rgb(238, 111, 81);
+}
+.c_3 > div > div > p,
+span,
+p {
+  font-size: 14px;
+}
+.c_3 > div > a > .card:hover {
+  top: 10px;
+}
+
+/* Smart Band Column */
+.c_4 {
+  max-width: 850px;
+}
+.c_4 > div > div > h1 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+.c_4 > div > div > .btn-warning {
+  background-color: rgb(218, 83, 49);
+  color: #fff;
+  font-weight: 400;
+}
+.c_4 > div > div > button {
+  border-radius: 50px;
+}
+.c_4 > div > div > button:hover {
+  background-color: rgb(102, 48, 45);
+}
+.c_4 > div > div > img {
+  margin-top: 100px;
+  padding-bottom: 13px;
+  max-width: 400px;
+}
+
+/* Three Column Testimonial */
+.c_5 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.c_5 > div > a > div > div > i {
+  color: rgb(218, 83, 49);
+}
+.c_5 > div > a > div > div > p {
+  font-size: 13px;
+}
+.c_5 > div > a > div > div > img {
+  border-radius: 100%;
+}
+.c_5 > div > a > .card:hover {
+  top: 10px;
+}
+.c_5 > div > a > .card {
+  box-shadow: 0.5px 0.5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Brand Column */
+.c_7 > div > a > img {
+  filter: grayscale(100%);
+}
+.c_7 > div > a > img:hover {
+  filter: grayscale(0);
+}
+.c_7 {
+  margin-bottom: 100px;
+}
+
+/* Modal */
+.modals>i{
+  color: rgb(218, 83, 49);
+}
+.modals>img{
+  border-radius: 100%;
+}
+
+/* Footer */
+.footer-brand {
+  font-size: 24px;
+}
+.b_2 {
+  font-size: 24px;
+}
+.c_6 > div > p {
+  font-size: 13px;
+}
+.c_6 > div > h4 {
+  font-size: 20px;
+}
+.img_5 {
+  margin-left: -24px;
+}
+.hr_2 {
+  border: 1px solid;
+}
+
+/*------- Device Under 992px (lg) -------*/
+@media (max-width: 992px) {
+  .navbar > h1 {
+    font-size: 28px;
+    margin-left: 100px;
+  }
+  .b_1 {
+    font-size: 28px;
+  }
+  .nav-link {
+    font-size: 13px;
+  }
+  .img_1 {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 8px;
+  }
+
+  .c_1 > div > h1 {
+    font-size: 34px;
+    font-weight: bolder;
+  }
+  .c_1 > div > img {
+    transform: translateY(-60px);
+  }
+
+  .c_2 {
+    margin-top: 70px;
+    margin-bottom: 100px;
+  }
+
+  .c_4 > div > div > img {
+    margin-top: 100px;
+    padding-bottom: 13px;
+    max-width: 340px;
+  }
+  .c_4 > div > div > h1 {
+    font-size: 34px;
+    font-weight: bolder;
+  }
+
+  .footer-brand {
+    font-size: 20px;
+  }
+  .b_2 {
+    font-size: 20px;
+  }
+  .c_6 > div > p {
+    font-size: 12px;
+  }
+  .c_6 > div > h4 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .p_1 {
+    font-size: 12px;
+  }
+}
+
+/*------- Device Under 768px (md) -------*/
+@media (max-width: 768px) {
+  .navbar > h1 {
+    font-size: 28px;
+    margin-left: 50px;
+  }
+  .navbar-toggler {
+    position: absolute;
+    right: 10px;
+  }
+  .c_12 {
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    height: 24px;
+    width: 24px;
+  }
+  .c_1 > div > h1 {
+    font-size: 28px;
+    font-weight: bolder;
+  }
+  .c_1 > div > p {
+    font-size: 14px;
+  }
+  .c_1 > div > .btn {
+    font-size: 1px;
+  }
+  .c_1 > div > .btn > span {
+    font-size: 12px;
+  }
+
+  .c_3 > div > a > div > p,
+  span {
+    font-size: 13px;
+  }
+
+  .c_4 > div > div > img {
+    margin-top: 100px;
+    padding-bottom: 13px;
+    max-width: 280px;
+  }
+  .c_4 > div > div > p {
+    font-size: 14px;
+  }
+  .c_4 > div > div > h1 {
+    font-size: 28px;
+    font-weight: bolder;
+  }
+  .c_4 > div > div > .btn {
+    font-size: 1px;
+  }
+  .c_4 > div > div > .btn > span {
+    font-size: 12px;
+  }
+
+  .c_5 > div > a > div {
+    margin: auto;
+    max-width: 350px;
+  }
+
+  .c_7 > div > a > img {
+    min-height: 50px;
+    min-width: 50px;
+  }
+
+  .footer-brand {
+    font-size: 16px;
+  }
+  .b_2 {
+    font-size: 16px;
+  }
+  .c_6 > div > p {
+    font-size: 11px;
+  }
+  .c_6 > div > h4 {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .p_1 {
+    font-size: 11px;
+  }
+}
+
+/*------- Device Under 577px (sm) -------*/
+@media (max-width: 576px) {
+  .navbar > h1 {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+  .b_1 {
+    font-size: 20px;
+  }
+  .navbar-toggler-icon {
+    font-size: 10px;
+  }
+  .c_12{
+    height: 20px;
+    width: 20px;
+  }
+  .c_1 > div > h1 {
+    font-size: 18px;
+    font-weight: bolder;
+  }
+  .c_1 > div > p {
+    font-size: 14px;
+    text-align: left;
+  }
+  .c_1 > div > .btn {
+    font-size: 1px;
+  }
+  .c_1 > div > .btn > span {
+    font-size: 10px;
+  }
+
+  .c_2 > div > div > img {
+    margin: auto;
+  }
+  .col-6 {
+    margin: auto;
+  }
+
+  .c_8 {
+    font-size: 22px;
+  }
+  .c_3 > div > a > div > p,
+  span,
+  p {
+    margin: auto;
+  }
+  .star {
+    position: relative;
+    top: 7px;
+  }
+  .c_3 > div > a > div {
+    max-width: 350px;
+    margin: auto;
+  }
+  .c_3 > div > a > div > div {
+    margin-bottom: 8px;
+    max-width: 250px;
+    margin: auto;
+  }
+  .c_3 > div > a > div > p {
+    margin-bottom: 4px;
+  }
+  .c_3 > div > a > div > span {
+    margin-bottom: 3px;
+  }
+
+  .c_4 > div > div > img {
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 13px;
+    max-width: 260px;
+    margin: auto;
+  }
+  .c_4 > div > div > p {
+    font-size: 13px;
+    text-align: left;
+  }
+  .c_4 > div > div > h1 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: left;
+  }
+  .c_4 > div > div > .btn {
+    font-size: 1px;
+  }
+
+  .c_4 > div > div > .btn > span {
+    font-size: 10px;
+  }
+
+  .c_5 > div > a > div {
+    margin: auto;
+    max-width: 350px;
+  }
+
+  .c_7 > div > a > img {
+    max-height: 100px;
+    max-width: 100px;
+    margin: auto;
+  }
+
+  .c_9 > div > a > img {
+    max-width: 100px;
+    margin: auto;
+  }
+  .c_6 > div > h4,
+  p {
+    text-align: center;
+  }
+  .c_6 > div > p {
+    position: relative;
+    top: -10px;
+  }
+  .c_9 > div > a > img {
+    position: relative;
+    top: -20px;
+  }
+  .footer-brand {
+    font-size: 16px;
+  }
+  .b_2 {
+    font-size: 16px;
+  }
+  .c_10 {
+    position: relative;
+    bottom: -15px;
+  }
+  .c_11 > a {
+    position: relative;
+    top: -8px;
+  }
+  .c_6 > div > p {
+    font-size: 11px;
+  }
+  .c_6 > div > h4 {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .p_1 {
+    font-size: 11px;
+  }
+}
+@media (max-width: 288px){
+  .navbar-toggler{
+    position: absolute;
+    left: 130px;
+    top: 50px;
+  }
+  .img_1{
+    position: absolute;
+    left: 90px;
+    top: 50px;
+  }
+  .c_9>div>a>img{
+    max-width: 80px;
+  }
+}

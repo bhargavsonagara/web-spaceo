@@ -1,0 +1,43 @@
+.signUpContainer{
+    background-color: rgb(172,159,159);
+    background: radial-gradient(#fff,#ffd6d6);
+}
+.col-1{
+    padding-right: 25px;
+}
+.col-1>i{
+    position: relative;
+    top: 3px;
+}
+input{
+    cursor: pointer;
+    border-radius: 6%;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+.remember_mee{
+    position: relative;
+    bottom: 3px;
+}
+.signup_head{
+    position: relative;
+    top: 18px;
+}
+
+@media (max-width: 992px){
+    .card{
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+}
+@media (max-width: 768px){
+    .card{
+        margin-top: -20px;
+    }
+}
+@media (max-width: 576px){
+    .signup_head{
+        margin-bottom: 18px;
+    }
+}

@@ -1,0 +1,165 @@
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html,body{
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+}
+
+.containers{
+height: 100%;
+align-content: center;
+}
+
+.card{
+height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.3) !important;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #FFC312;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+width: 50px;
+background-color: #FFC312;
+color: black;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FFC312;
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+}
+
+@media (max-width: 992px){
+    .c_1{
+        padding-top: 100px;
+    }   
+    .social_icon{
+        position: absolute;
+        top: -10px;
+    }
+    .card-header>h3{
+        font-size: 22px;
+    }
+    .input-group>input{  
+        font-size: 14px;
+    }
+    .remember_me{
+        font-size: 14px;
+    }
+    .login_btn{
+        font-size: 14px;
+    }
+    .card-footer>div{
+        font-size: 14px;
+    }
+    .card{
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 576px){
+    .remember_me{
+        position: absolute;
+        right: 240px;
+    }
+}
+@media (max-width: 454px){
+    .containers{
+        max-width: 300px;
+        margin: auto;
+    }
+    .remember>span{
+        position: relative;
+        left: -70px;
+    }
+    .remember_me{
+        font-size: 12px;
+    }
+    .card-header>h3{
+        font-size: 18px;
+        text-align: center;
+    }
+    .input-group>input{  
+        font-size: 12px;
+    }
+    .social_icon{
+        position: absolute;
+        top: -70px;
+        right: 50px;
+    }
+    .card-footer>div{
+        font-size: 12px;
+    }
+}
+@media (max-width:336px){
+    .remember>span{
+        left: 45px;
+    }
+    .login_btn{
+        position: absolute;
+        top: 10px;
+    }
+}
+@media (max-width:288px){
+    .navbar{
+        padding-bottom: 30px;
+    }
+}
